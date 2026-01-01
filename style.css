@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.najveciDiv{
+    background-color: rgb(230, 227, 227); 
+    padding: 20px;          
+    text-align: center;      
+    border-radius: 8px;      
+    margin: 20px auto;       
+    width: 100%;              
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    text-align: center;
+}
+nav {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff; 
+}
+
+#container {
+    display: flex;         
+    justify-content: center;
+    align-items: center;
+    gap: 30px;              
+    margin-top: 40px;
+}
+
+#tekst, #slika {
+    background-color: white;
+    padding: 20px;
+    width: 45%;             
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#tekst p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#slika img {
+    width: 100%;            
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+
+    background: linear-gradient(to right, #888888, #ffffff, #000000);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff, #d0d0d0);
+    color: #333;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    gap: 50px;
+}
+.hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; 
+      background-image: url('https://source.unsplash.com/1920x1080/?technology'); 
+      background-size: 100%;
+      background-position: center;
+      display:block;
+      align-items: center;
+      justify-content: flex-start; 
+      padding-left: 50px;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-logo {
+      width: 300px;
+      height: 300px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4); 
+      z-index: 0;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      max-width: 500px;
+      animation: slideFade 2s ease forwards;
+    }
+
+    .hero-text h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s 0.5s forwards;
+    }
+
+    .hero-text p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s 1s forwards;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      border: 2px solid white;
+      text-decoration: none;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeIn 2s 1.5s forwards;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+
+    /* Animacije */
+    @keyframes slideFade {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+
+    /* TVOJA SLIKA */
+    background-image: url("logo.png"); 
+    background-size: cover;             
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+
+    display: flex;
+    align-items: center;               
+    justify-content: flex-start;        
+    padding-left: 50px;
+
+    color: white;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* DUGME */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 50px 20px 20px;
+    margin-top: 0px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.hero {
+    height: 650px;       
+    padding-left: 100px;  
+    height: 700px;
+   margin-bottom: 120px; 
+   padding-bottom: 100px;
+   
+}
+.hero-text {
+    max-width: 600px;   
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+}
+
+
+
+
+    
